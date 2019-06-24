@@ -1,0 +1,60 @@
+{
+    "name": "nlp-with-dispatch",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "id": "1",
+            "name": "development",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages"
+        },
+      {
+        "type": "luis",
+        "name": "Home Automation",
+        "appId": "767f4258-996b-4907-b785-6af57fba93a5",
+        "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+        "subscriptionKey": "44d3ac41928a4b55a108690d4f641fc7",
+        "version": "0.1",
+        "region": "westus",
+        "id": "7"
+      },
+      {
+        "type": "luis",
+        "name": "Weather",
+        "appId": "59954af8-4fbf-4308-aca6-f6c9d13d4247",
+        "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+        "subscriptionKey": "44d3ac41928a4b55a108690d4f641fc7",
+        "version": "0.1",
+        "region": "westus",
+        "id": "50"
+      },
+      {
+        "type": "qna",
+        "name": "sample-qna",
+        "id": "201",
+        "kbId": "cf08c264-af27-473c-adce-43324cd4446b",
+        "subscriptionKey": "44d3ac41928a4b55a108690d4f641fc7",
+        "endpointKey": "7a0b7dc9-ed01-414d-a4d5-958e2db7cfee",
+        "hostname": "https://qnamaker-tech-2019-demo.azurewebsites.net/qnamaker"
+      },
+      {
+        "type": "dispatch",
+        "serviceIds": [
+          "50",
+          "201",
+          "7"
+        ],
+        "name": "nlp-with-dispatchDispatch",
+        "appId": "e9ba6833-ed77-4a0a-b9cf-f5f4717c42a4",
+        "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+        "subscriptionKey": "44d3ac41928a4b55a108690d4f641fc7",
+        "version": "Dispatch",
+        "region": "westus",
+        "id": "161"
+      }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}

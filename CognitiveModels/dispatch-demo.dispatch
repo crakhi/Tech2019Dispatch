@@ -1,0 +1,48 @@
+{
+  "authoringRegion": "westus",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "services": [
+    {
+      "intentName": "l_Weather",
+      "appId": "59954af8-4fbf-4308-aca6-f6c9d13d4247",
+      "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "Weather",
+      "id": "1"
+    },
+    {
+      "intentName": "l_HomeAutomation",
+      "appId": "767f4258-996b-4907-b785-6af57fba93a5",
+      "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "Home Automation",
+      "id": "2"
+    },
+    {
+      "intentName": "q_sample-qna",
+      "kbId": "cf08c264-af27-473c-adce-43324cd4446b",
+      "subscriptionKey": "44d3ac41928a4b55a108690d4f641fc7",
+      "type": "qna",
+      "name": "qnamaker-tech-2019-demo",
+      "id": "3"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2",
+    "3"
+  ],
+  "appId": "e9ba6833-ed77-4a0a-b9cf-f5f4717c42a4",
+  "authoringKey": "54bc8e205d764d089680f08f4ced9b2f",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "dispatch-demo"
+}
